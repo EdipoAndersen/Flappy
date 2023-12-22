@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    [SerializeField] private GameObject canvas;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,11 +23,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     public void GameOver()
     {
-        Debug.Log("Game over");
+        canvas.SetActive(true);
         Time.timeScale = 0f;
     }
 
-    public void RestarGame()
+    public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
