@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4464481383436750749}
   - component: {fileID: 4464481383436750748}
   - component: {fileID: 2561717704048377019}
-  - component: {fileID: 6999141121348084998}
+  - component: {fileID: 8293527392342064470}
   m_Layer: 0
   m_Name: GrassPrefab
   m_TagString: Untagged
@@ -74,7 +74,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.4}
   m_EdgeRadius: 0
---- !u!114 &6999141121348084998
+--- !u!114 &8293527392342064470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

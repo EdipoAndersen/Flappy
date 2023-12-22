@@ -8,6 +8,7 @@ public class PlayerBehavior : MonoBehaviour
 {
     [SerializeField] private float birdVerticalSpeed = 1f;
     [SerializeField] private float birdRotation = 1f;
+    [SerializeField] private SoundManager soundManager;
 
     private Rigidbody2D birdRigidbody;
 
@@ -32,6 +33,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        soundManager.HitObject();
         GameManager.instance.GameOver();
     }
 }

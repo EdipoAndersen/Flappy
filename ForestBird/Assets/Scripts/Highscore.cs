@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Highscore : MonoBehaviour
 {
     public static Highscore instance;
-
+    [SerializeField] public SoundManager soundManager;
     [SerializeField] private Text scorePoints;
     [SerializeField] private Text bestPoints;
 
@@ -38,6 +38,7 @@ public class Highscore : MonoBehaviour
 
     public void UpdateScore()
     {
+        soundManager.IncreaseScore();
         score++;
         scorePoints.text = score.ToString();
         UpdateBestscore();
